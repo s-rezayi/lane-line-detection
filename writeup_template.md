@@ -15,7 +15,7 @@ The goals / steps of this project are the following:
 
 [//]: # (Image References)
 
-[image1]: ./examples/grayscale.jpg "Grayscale"
+[image1]: ./test_images_output/solidWhiteCurve.jpg "Result"
 
 ---
 
@@ -27,8 +27,7 @@ My pipeline consisted of 5 steps. First, I converted the images to grayscale, an
 
 I modified the draw_lines() function by separating the left and right lines using their slope and x coordinate to draw a single line on the left and right lanes. To make it more robust, too large or too small slopes are filtered out. By averaging the parameters and calculating the intercepts, I then calculated each line's initial and end points. In the final step, the lines are drawn using the line function.
 
-
-If you'd like to include images to show how the pipeline works, here is how to include an image: 
+ 
 
 ![alt text][image1]
 
